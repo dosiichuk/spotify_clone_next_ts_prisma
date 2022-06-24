@@ -10,7 +10,6 @@ export const useMe = () => {
   };
 };
 
-// hook to fetch playlist
 export const usePlaylist = () => {
   const { data, error } = useSWR("/playlist", fetcher);
   return {
