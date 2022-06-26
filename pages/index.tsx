@@ -1,7 +1,12 @@
+import GradientLayout from "../components/gradientLayout";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
-  return <div className={styles.container}>Home</div>;
+  return (
+    <GradientLayout color="red" roundImage>
+      <div>Home</div>
+    </GradientLayout>
+  );
 };
 
 export default Home;
