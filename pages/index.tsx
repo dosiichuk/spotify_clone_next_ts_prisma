@@ -5,7 +5,7 @@ import { useMe } from "../lib/hooks";
 import prisma from "../lib/prisma";
 
 const Home = ({ artists }) => {
-  const { user, error } = useMe();
+  const { user } = useMe();
   return (
     <GradientLayout
       color="red"
