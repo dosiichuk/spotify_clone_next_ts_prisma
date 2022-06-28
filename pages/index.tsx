@@ -23,7 +23,7 @@ const Home = ({ artists }) => {
           <Text fontSize="md">Only visible for your profile</Text>
         </Box>
         <Flex>
-          {artists.map((artist) => (
+          {artists.map((artist, index) => (
             <Box paddingX="10px" width="15%">
               <Box bg="gray.900" borderRadius="4px" padding="14px" width="100%">
                 <Image
@@ -31,7 +31,7 @@ const Home = ({ artists }) => {
                   objectFit="cover"
                   boxSize="150px"
                   marginX="auto"
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+                  src={`https://picsum.photos/400?random=${index}`}
                 />
                 <Box marginTop="20px">
                   <Text fontSize="large">{artist.name}</Text>

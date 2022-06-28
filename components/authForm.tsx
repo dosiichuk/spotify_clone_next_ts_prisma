@@ -1,7 +1,6 @@
 import { Box, Flex, Input, Button } from "@chakra-ui/react";
 import { FC, useState } from "react";
 import { useRouter } from "next/router";
-import { useSWRConfig } from "swr";
 import { MdFace } from "react-icons/md";
 import { auth } from "../lib/mutations";
 
@@ -37,6 +36,7 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
               placeholder="email"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
+              marginBottom="10px"
             />
             <Input
               placeholder="password"
